@@ -31,8 +31,9 @@ class ActionConfig:
 
     @staticmethod
     def _default_path() -> str:
-        base = Path(__file__).resolve().parent.parent
-        return str(base / "config" / "actions.json")
+        from ..utils.constants import get_actions_config_path
+
+        return str(get_actions_config_path())
 
     def _load(self) -> Dict[str, Any]:
         raw: Dict[str, Any] = {}

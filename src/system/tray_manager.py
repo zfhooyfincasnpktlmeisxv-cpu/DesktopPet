@@ -12,7 +12,7 @@ from PyQt6.QtWidgets import QSystemTrayIcon, QMenu, QApplication
 
 from ..ui.pet_window import PetWindow
 from ..system.data_persistence import DataPersistence
-from ..utils.constants import DEFAULT_SKIN
+from ..utils.constants import DEFAULT_SKIN, get_assets_dir
 from ..i18n import t
 
 logger = logging.getLogger(__name__)
@@ -79,6 +79,7 @@ class TrayManager(QObject):
         """
         # 尝试加载自定义图标
         icon_paths = [
+            get_assets_dir() / "icon.png",
             Path("assets/icon.png"),
             Path("icon.png"),
         ]

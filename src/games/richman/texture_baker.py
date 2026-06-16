@@ -10,6 +10,7 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 from .board_data import TileDef, TileKind, all_tiles
 from .tile_style import tile_icon, tile_subtitle
+from src.utils.constants import get_bundle_dir
 
 ATLAS_COLS = 6
 ATLAS_ROWS = 4
@@ -19,7 +20,7 @@ ASSETS_REL = Path("assets") / "richman" / "textures"
 
 
 def _project_root() -> Path:
-    return Path(__file__).resolve().parents[3]
+    return get_bundle_dir()
 
 
 def textures_dir() -> Path:

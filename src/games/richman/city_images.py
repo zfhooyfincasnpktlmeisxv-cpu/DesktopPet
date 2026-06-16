@@ -15,6 +15,7 @@ from PyQt6.QtGui import QLinearGradient, QPainter, QPainterPath, QPixmap, QColor
 from .board_data import TileDef, TileKind
 from .city_image_sources import CITY_IMAGE_SOURCES, ImageSource
 from .city_landmarks import draw_city_landmark
+from src.utils.constants import get_bundle_dir
 
 logger = logging.getLogger(__name__)
 
@@ -27,7 +28,7 @@ MIN_BYTES = 2048
 
 
 def _project_root() -> Path:
-    return Path(__file__).resolve().parents[3]
+    return get_bundle_dir()
 
 
 def cities_dir() -> Path:

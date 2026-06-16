@@ -7,8 +7,9 @@ import urllib.request
 from pathlib import Path
 from typing import Dict, Optional
 
-PROJECT_ROOT = Path(__file__).resolve().parents[3]
-AUDIO_DIR = PROJECT_ROOT / "assets" / "richman" / "audio"
+from src.utils.constants import get_bundle_dir
+
+AUDIO_DIR = get_bundle_dir() / "assets" / "richman" / "audio"
 SRC_DIR = AUDIO_DIR / "_src"
 
 _USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) DesktopPet/1.0"

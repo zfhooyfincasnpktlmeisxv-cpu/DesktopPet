@@ -6,9 +6,11 @@ import logging
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
+from ..utils.constants import get_locales_dir
+
 logger = logging.getLogger(__name__)
 
-_LOCALES_DIR = Path(__file__).resolve().parent / "locales"
+_LOCALES_DIR = get_locales_dir()
 _FALLBACK = "en"
 
 SUPPORTED_LANGUAGES: Dict[str, str] = {

@@ -523,6 +523,33 @@ PET_DATA_FIELDS = {
 }
 
 # ============== 获取配置目录路径 ==============
+def get_bundle_dir() -> Path:
+    """
+    应用资源根目录。
+    开发模式：项目根目录；PyInstaller 打包后：sys._MEIPASS 临时目录。
+    """
+    import sys
+
+    if getattr(sys, "frozen", False):
+        return Path(sys._MEIPASS)
+    return Path(__file__).resolve().parent.parent.parent
+
+
+def get_assets_dir() -> Path:
+    """assets/ 目录（图标、大富翁素材等）"""
+    return get_bundle_dir() / "assets"
+
+
+def get_locales_dir() -> Path:
+    """i18n 语言包目录"""
+    return get_bundle_dir() / "src" / "i18n" / "locales"
+
+
+def get_actions_config_path() -> Path:
+    """动作配置文件 actions.json"""
+    return get_bundle_dir() / "src" / "config" / "actions.json"
+
+
 def get_config_dir() -> Path:
     r"""
     获取配置文件目录路径
@@ -543,14 +570,4 @@ def get_skins_dir() -> Path:
     获取皮肤目录路径
     打包后使用 sys._MEIPASS（PyInstaller 临时目录）
     """
-    import sys
-    
-    # PyInstaller 单文件模式
-    if getattr(sys, 'frozen', False):
-        # 使用 PyInstaller 临时解压目录
-        base_dir = Path(sys._MEIPASS)
-    else:
-        # 开发模式下使用代码目录
-        base_dir = Path(__file__).resolve().parent.parent.parent
-    
-    return base_dir / SKINS_DIR
+    return get_bundle_dir() / SKINS_DIR
