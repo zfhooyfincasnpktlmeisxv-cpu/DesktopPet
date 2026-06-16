@@ -449,11 +449,11 @@ class PetWindow(QWidget):
         if available < 30:
             return direction, random.randint(40, 80)
 
-        ratio = random.uniform(0.22, 0.58)
+        ratio = random.uniform(0.32, 0.72)
         target = int(available * ratio)
-        target = max(60, min(260, target))
-        if random.random() < 0.12:
-            target = min(int(available * 0.75), random.randint(200, 340))
+        target = max(80, min(300, target))
+        if random.random() < 0.18:
+            target = min(int(available * 0.82), random.randint(220, 380))
         return direction, target
 
     def debug_glide_forward(self) -> None:

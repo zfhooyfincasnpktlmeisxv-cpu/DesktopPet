@@ -2,14 +2,16 @@
     "version": "2.0",
     "schedule": {
         "blink": {
-            "min_interval_ms": 2000,
-            "max_interval_ms": 5000
+            "min_interval_ms": 2800,
+            "max_interval_ms": 6500
         },
         "walk": {
-            "min_interval_ms": 12000,
-            "max_interval_ms": 35000,
-            "first_delay_min_ms": 5000,
-            "first_delay_max_ms": 12000
+            "min_interval_ms": 8000,
+            "max_interval_ms": 16000,
+            "first_delay_min_ms": 6000,
+            "first_delay_max_ms": 12000,
+            "rest_min_ms": 8000,
+            "rest_max_ms": 15000
         },
         "sleep": {
             "idle_duration_ms": 300000
@@ -34,7 +36,7 @@
             "anim_name": "walk",
             "fps": 8,
             "loop": true,
-            "speed_px_per_sec": 50,
+            "speed_px_per_sec": 58,
             "duration_ms": -1
         },
         "eat": {
@@ -98,7 +100,7 @@
             "allowed_to": ["idle", "click", "grabbed"]
         },
         "sad": {
-            "allowed_to": ["idle", "happy", "click", "grabbed", "eat", "walk"]
+            "allowed_to": ["idle", "blink", "happy", "click", "grabbed", "eat", "walk"]
         },
         "happy": {
             "allowed_to": ["idle", "click", "grabbed"]

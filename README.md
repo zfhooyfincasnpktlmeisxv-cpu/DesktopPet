@@ -52,7 +52,7 @@ Release builds are **self-contained** Windows executables. You do **not** need P
 
 | File | Best for |
 |------|----------|
-| **`DesktopPet-Setup-1.0.0.exe`** | Most users — installer, optional desktop shortcut |
+| **`DesktopPet-Setup-1.0.1.exe`** | Most users — installer, optional desktop shortcut |
 | **`DesktopPet.exe`** | Portable — run without installing |
 
 | | |

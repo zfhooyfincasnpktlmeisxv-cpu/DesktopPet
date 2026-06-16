@@ -51,7 +51,11 @@ class ActionScheduler(QObject):
         self._schedule_blink()
         if self._auto_walk:
             self._walk_timer.stop()
-            self._schedule_walk()
+            # 互动后稍等再走，别把走路排得太远
+            cfg = self._config.get("walk", {})
+            lo = int(cfg.get("rest_min_ms", 8000))
+            hi = int(cfg.get("rest_max_ms", 15000))
+            self._walk_timer.start(random.randint(lo, hi))
 
     def notify_walk_finished(self) -> None:
         """走完一段路后，随机待机再计划下一次走。"""
@@ -83,11 +87,12 @@ class ActionScheduler(QObject):
         if first:
             lo = int(cfg.get("first_delay_min_ms", 8000))
             hi = int(cfg.get("first_delay_max_ms", 22000))
+        elif after_trip:
+            lo = int(cfg.get("rest_min_ms", 8000))
+            hi = int(cfg.get("rest_max_ms", max(lo + 1, 15000)))
         else:
             lo = int(cfg.get("min_interval_ms", 18000))
             hi = int(cfg.get("max_interval_ms", 55000))
-            if after_trip:
-                lo = int(lo * 1.1)
         delay = random.randint(lo, hi)
         self._walk_timer.start(delay)
         logger.debug("下次走路约 %ds 后", delay // 1000)

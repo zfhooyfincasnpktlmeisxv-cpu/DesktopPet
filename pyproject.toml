@@ -1,6 +1,6 @@
 [project]
 name = "desktop-pet"
-version = "1.0.0"
+version = "1.0.1"
 description = "Transparent Windows desktop pet with shop economy, Monopoly, chess, and arcade mini-games."
 readme = "README.md"
 license = { text = "MIT" }

@@ -134,6 +134,8 @@ class ActionManager(QObject):
     def resume_scheduler(self) -> None:
         if self._scheduler:
             self._scheduler.start()
+            # 退出小游戏后立刻恢复眨眼/溜达节奏，避免长时间“呆住”
+            self._scheduler.record_interaction()
 
     def notify_walk_finished(self) -> None:
         if self._scheduler:
@@ -196,7 +198,10 @@ class ActionManager(QObject):
         if self._blink_frame >= BLINK_FRAME_COUNT - 1:
             self._stop_blink()
             if self._current == ActionState.BLINK:
-                self._transition_to(ActionState.IDLE)
+                resume = self._previous
+                if resume in (ActionState.BLINK, ActionState.WALK, ActionState.GRABBED):
+                    resume = ActionState.IDLE
+                self._transition_to(resume)
 
     def _stop_blink(self) -> None:
         self._blink_timer.stop()
@@ -226,7 +231,7 @@ class ActionManager(QObject):
             self._transition_to(ActionState.IDLE)
 
     def _trigger_blink(self) -> None:
-        if self._current == ActionState.IDLE:
+        if self._current in (ActionState.IDLE, ActionState.SAD):
             self.request_action(ActionState.BLINK)
 
     def _trigger_walk(self) -> None:

@@ -15,7 +15,9 @@
 | [../CONTRIBUTING.md](../CONTRIBUTING.md) | Contributor guide |
 | [GITHUB_PROMO.md](GITHUB_PROMO.md) | About / Topics / Release copy |
 | [LANGUAGES.md](LANGUAGES.md) | 18 UI languages (full table) |
-| [RELEASE_NOTES.md](RELEASE_NOTES.md) | v1.0.0 checksums & antivirus notes |
+| [RELEASE_v1.0.1.md](RELEASE_v1.0.1.md) | v1.0.1 checksums & release notes |
+| [RELEASE_PUBLISH_v1.0.1.md](RELEASE_PUBLISH_v1.0.1.md) | GitHub Release 粘贴文案 |
+| [RELEASE_NOTES.md](RELEASE_NOTES.md) | v1.0.0 checksums (archived) |
 | [github-social-preview.png](github-social-preview.png) | GitHub 社交预览图 (1280×640) |
 
 ## Assets & licenses

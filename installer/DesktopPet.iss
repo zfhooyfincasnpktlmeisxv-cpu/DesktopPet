@@ -1,6 +1,6 @@
 ; Inno Setup script — build after DesktopPet.exe exists in dist/
 #define MyAppName "Desktop Pet"
-#define MyAppVersion "1.0.0"
+#define MyAppVersion "1.0.1"
 #define MyAppPublisher "DesktopPet"
 #define MyAppURL "https://github.com/zfhooyfincasnpktlmeisxv-cpu/DesktopPet"
 #define MyAppExeName "DesktopPet.exe"

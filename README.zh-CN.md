@@ -31,7 +31,7 @@
 
 | 文件 | 说明 |
 |------|------|
-| **DesktopPet-Setup-1.0.0.exe** | 安装版（推荐） |
+| **DesktopPet-Setup-1.0.1.exe** | 安装版（推荐） |
 | **DesktopPet.exe** | 绿色单文件 |
 
 系统：Windows 10/11 64 位 · 存档：`%APPDATA%\DesktopPet\`
