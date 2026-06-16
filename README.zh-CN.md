@@ -2,7 +2,23 @@
 
 [English README](README.md)
 
+[![tests](https://github.com/zfhooyfincasnpktlmeisxv-cpu/DesktopPet/actions/workflows/tests.yml/badge.svg)](https://github.com/zfhooyfincasnpktlmeisxv-cpu/DesktopPet/actions/workflows/tests.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 一只住在 Windows 桌面上的桌宠：待机、走路、冒气泡；喂食、刷好感，还能陪你玩 **大富翁** 和 **国际象棋**。
+
+> 同人桌宠项目，与 DeepSeek 或任何官方品牌无关。发布前请确认角色素材的分发权。
+
+## 下载（免 Python）
+
+到 [GitHub Releases](https://github.com/zfhooyfincasnpktlmeisxv-cpu/DesktopPet/releases) 下载：
+
+- **DesktopPet-Setup-1.0.0.exe** — 安装版（推荐）
+- **DesktopPet.exe** — 绿色单文件版
+
+系统要求：Windows 10/11 64 位。存档在 `%APPDATA%\DesktopPet\`。
+
+自己打包见 [docs/BUILD.md](docs/BUILD.md)。
 
 ## 语言
 
@@ -11,7 +27,7 @@
 
 完整自测清单：[docs/QA.md](docs/QA.md)
 
-## 快速开始
+## 从源码运行
 
 ```powershell
 cd DesktopPet
@@ -26,7 +42,13 @@ pip install -r requirements.txt
 
 ## 截图
 
-见 [README.md](README.md#screenshots) 中的 `docs/screenshots/`。
+见 [README.md#screenshots](README.md#screenshots) 中的 `docs/screenshots/`。
+
+## 参与贡献
+
+- [CONTRIBUTING.md](CONTRIBUTING.md) — 开发说明
+- [CHANGELOG.md](CHANGELOG.md) — 更新记录
+- [SECURITY.md](SECURITY.md) — 安全问题反馈
 
 ## 许可
 

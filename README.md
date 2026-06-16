@@ -1,5 +1,9 @@
 # Desktop Pet
 
+[![tests](https://github.com/zfhooyfincasnpktlmeisxv-cpu/DesktopPet/actions/workflows/tests.yml/badge.svg)](https://github.com/zfhooyfincasnpktlmeisxv-cpu/DesktopPet/actions/workflows/tests.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/zfhooyfincasnpktlmeisxv-cpu/DesktopPet?label=release)](https://github.com/zfhooyfincasnpktlmeisxv-cpu/DesktopPet/releases)
+
 A transparent, always-on-top **desktop companion** for Windows — idle animations, speech bubbles, hunger/mood stats, a small shop economy, and a bundle of mini-games including **Monopoly** and **Chess**.
 
 > Fan-made desktop pet project. **Not** affiliated with DeepSeek or any official brand.  
@@ -36,7 +40,22 @@ Chinese feature guide: [docs/zh-CN/FEATURES.md](docs/zh-CN/FEATURES.md) · [READ
 
 ---
 
-## Quick start (Windows)
+## Download (Windows)
+
+**No Python required** — grab a build from [GitHub Releases](https://github.com/zfhooyfincasnpktlmeisxv-cpu/DesktopPet/releases):
+
+| File | Description |
+|------|-------------|
+| `DesktopPet-Setup-1.0.0.exe` | Installer (recommended) |
+| `DesktopPet.exe` | Portable single-file app |
+
+Requirements: **Windows 10/11** 64-bit. Saves go to `%APPDATA%\DesktopPet\`.
+
+Build from source or create your own installer: [docs/BUILD.md](docs/BUILD.md).
+
+---
+
+## Quick start (from source)
 
 ### Requirements
 
@@ -117,6 +136,18 @@ Set `DEV_MODE = False` in `src/utils/constants.py` before release (already off b
 - Chess logic: [python-chess](https://github.com/niklasf/python-chess)
 
 See [assets/richman/README.md](assets/richman/README.md) for details.
+
+---
+
+## Community
+
+| Document | Purpose |
+|----------|---------|
+| [CHANGELOG.md](CHANGELOG.md) | Release history |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Dev setup & PR guidelines |
+| [SECURITY.md](SECURITY.md) | Report vulnerabilities privately |
+| [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | Community standards |
+| [docs/QA.md](docs/QA.md) | Manual test checklist |
 
 ---
 

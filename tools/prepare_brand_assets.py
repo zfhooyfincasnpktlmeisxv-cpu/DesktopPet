@@ -4,7 +4,7 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFilter
 
 ROOT = Path(__file__).resolve().parent.parent
 BRANDING = ROOT / "assets" / "branding"
@@ -13,21 +13,36 @@ OUT_DIR = BRANDING / "generated"
 ICON_PNG = ROOT / "assets" / "icon.png"
 ICON_ICO = ROOT / "assets" / "icon.ico"
 
+# Inno Setup modern wizard header background
+_WIZARD_HEADER_BG = (255, 255, 255)
+
+
+def _key_black_to_alpha(img: Image.Image) -> Image.Image:
+    """Remove black backdrop from试玩图 and soften edges to avoid halos."""
+    img = img.convert("RGBA")
+    px = img.load()
+    w, h = img.size
+    for y in range(h):
+        for x in range(w):
+            r, g, b, a = px[x, y]
+            if a == 0:
+                continue
+            brightness = max(r, g, b)
+            # Hard key near-black pixels
+            if brightness < 28:
+                px[x, y] = (r, g, b, 0)
+                continue
+            # Soft feather on dark fringe (typical JPG/PNG matte edge)
+            if brightness < 55:
+                t = (brightness - 28) / 27.0
+                px[x, y] = (r, g, b, int(a * t))
+    return img.filter(ImageFilter.GaussianBlur(radius=0.6))
+
 
 def _load_source() -> Image.Image:
     if not SOURCE.is_file():
         raise FileNotFoundError(f"Pet source image missing: {SOURCE}")
-    img = Image.open(SOURCE).convert("RGBA")
-    # 试玩图是黑底，抠成透明方便托盘/图标
-    data = img.getdata()
-    new_data = []
-    for r, g, b, a in data:
-        if r < 24 and g < 24 and b < 24:
-            new_data.append((r, g, b, 0))
-        else:
-            new_data.append((r, g, b, a))
-    img.putdata(new_data)
-    return img
+    return _key_black_to_alpha(Image.open(SOURCE))
 
 
 def _fit(im: Image.Image, size: tuple[int, int]) -> Image.Image:
@@ -38,6 +53,16 @@ def _fit(im: Image.Image, size: tuple[int, int]) -> Image.Image:
     oy = (size[1] - im.height) // 2
     canvas.paste(im, (ox, oy), im)
     return canvas
+
+
+def _composite_on_bg(rgba: Image.Image, canvas_size: tuple[int, int], bg: tuple[int, int, int]) -> Image.Image:
+    """Alpha-composite pet onto a solid background (BMP has no transparency)."""
+    canvas = Image.new("RGBA", canvas_size, bg + (255,))
+    pet = _fit(rgba, (canvas_size[0] - 6, canvas_size[1] - 6))
+    ox = (canvas_size[0] - pet.width) // 2
+    oy = (canvas_size[1] - pet.height) // 2
+    canvas.paste(pet, (ox, oy), pet)
+    return canvas.convert("RGB")
 
 
 def _gradient_bg(size: tuple[int, int]) -> Image.Image:
@@ -70,19 +95,16 @@ def write_installer_art(src: Image.Image) -> None:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
     # Inno Setup: WizardImageFile 164x314, WizardSmallImageFile 55x55
-    banner = _gradient_bg((164, 314))
-    pet = _fit(src, (140, 260))
-    banner_rgba = banner.convert("RGBA")
-    banner_rgba.paste(pet, ((164 - pet.width) // 2, 314 - pet.height - 18), pet)
+    banner = _gradient_bg((164, 314)).convert("RGBA")
+    pet = _fit(src, (136, 256))
+    banner.paste(pet, ((164 - pet.width) // 2, 314 - pet.height - 20), pet)
     banner_path = OUT_DIR / "wizard-banner.bmp"
-    banner_rgba.convert("RGB").save(banner_path, format="BMP")
+    banner.convert("RGB").save(banner_path, format="BMP")
     print(f"Wrote {banner_path}")
 
-    small = _fit(src, (48, 48))
-    small_bg = Image.new("RGB", (55, 55), (232, 244, 255))
-    small_bg.paste(small.convert("RGB"), ((55 - small.width) // 2, (55 - small.height) // 2))
+    # Top-right: match modern wizard white header, composite with alpha
     small_path = OUT_DIR / "wizard-small.bmp"
-    small_bg.save(small_path, format="BMP")
+    _composite_on_bg(src, (55, 55), _WIZARD_HEADER_BG).save(small_path, format="BMP")
     print(f"Wrote {small_path}")
 
 

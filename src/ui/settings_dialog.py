@@ -20,6 +20,7 @@ from PyQt6.QtWidgets import (
 
 from ..i18n import SUPPORTED_LANGUAGES, t
 from ..system.data_persistence import Settings
+from ..utils.constants import APP_VERSION
 
 logger = logging.getLogger(__name__)
 
@@ -87,6 +88,11 @@ class SettingsDialog(QDialog):
 
         root.addLayout(form)
 
+        self._version = QLabel()
+        self._version.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self._version.setStyleSheet("color: rgb(130, 140, 155); font-size: 11px;")
+        root.addWidget(self._version)
+
         buttons = QDialogButtonBox(
             QDialogButtonBox.StandardButton.Save
             | QDialogButtonBox.StandardButton.Cancel
@@ -106,6 +112,7 @@ class SettingsDialog(QDialog):
         self._stat_hud_label.setText(t("settings.show_stat_hud"))
         self._stat_hud.setText(t("settings.show_stat_hud"))
         self._opacity_label.setText(t("settings.opacity"))
+        self._version.setText(t("settings.version", version=APP_VERSION))
         if self._save_btn:
             self._save_btn.setText(t("settings.save"))
         if self._cancel_btn:

@@ -418,6 +418,9 @@ PET_MOOD_BOOST = 20        # 抚摸恢复的心情值
 INTIMACY_INCREMENT = 1     # 每次互动增加的亲密度
 
 # ============== 路径配置 ==============
+# 应用版本（发布时同步 installer/DesktopPet.iss 中的 MyAppVersion）
+APP_VERSION = "1.0.0"
+
 # 配置文件目录名
 CONFIG_DIR_NAME = "DesktopPet"
 

@@ -1,0 +1,33 @@
+[project]
+name = "desktop-pet"
+version = "1.0.0"
+description = "Transparent Windows desktop pet with shop economy, Monopoly, chess, and arcade mini-games."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "DesktopPet Contributors" }]
+keywords = ["desktop-pet", "pyqt6", "monopoly", "chess", "windows"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Win32 (MS Windows)",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Games/Entertainment",
+]
+dependencies = [
+    "PyQt6==6.6.1",
+    "Pillow==10.2.0",
+    "numpy>=1.24.0",
+    "opencv-python-headless>=4.8.0",
+    "chess>=1.10.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/zfhooyfincasnpktlmeisxv-cpu/DesktopPet"
+Repository = "https://github.com/zfhooyfincasnpktlmeisxv-cpu/DesktopPet"
+Issues = "https://github.com/zfhooyfincasnpktlmeisxv-cpu/DesktopPet/issues"
+Changelog = "https://github.com/zfhooyfincasnpktlmeisxv-cpu/DesktopPet/blob/master/CHANGELOG.md"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"

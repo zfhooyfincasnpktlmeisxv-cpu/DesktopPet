@@ -1,0 +1,64 @@
+name: Bug report
+description: Something is broken or behaves unexpectedly
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for the report. Please fill in what you can.
+
+  - type: dropdown
+    id: install_type
+    attributes:
+      label: How do you run Desktop Pet?
+      options:
+        - DesktopPet-Setup installer
+        - DesktopPet.exe (portable)
+        - From source (python src/main.py)
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Settings dialog footer, release tag, or commit hash
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Install ...\n2. Right-click pet ...\n3. ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Windows version
+      placeholder: "Windows 11 23H2"
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots / logs
+      description: Optional. Paste `%APPDATA%\DesktopPet\` relevant files if helpful.

@@ -37,6 +37,7 @@
     "auto_walk": "Auto walk when idle",
     "show_stat_hud": "Show hunger / mood bar",
     "opacity": "Window opacity",
+    "version": "Desktop Pet v{version}",
     "save": "Save",
     "cancel": "Cancel"
   },
