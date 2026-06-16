@@ -15,7 +15,7 @@ A transparent, always-on-top **desktop companion** for Windows — idle animatio
 
 | Chess | Arcade games |
 |:---:|:---:|
-| ![Chess](docs/screenshots/chess.png) | ![Mini games](docs/screenshots/mini-games.png) |
+| ![Chess](docs/screenshots/chess.png) | ![Arcade games](docs/screenshots/mini-games.png) |
 
 ---
 
