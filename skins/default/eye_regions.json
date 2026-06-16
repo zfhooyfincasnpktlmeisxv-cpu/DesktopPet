@@ -1,0 +1,24 @@
+{
+  "source": "auto_detect_v2",
+  "image_size": [
+    256,
+    426
+  ],
+  "method": "iris_connected_components_refined",
+  "regions": [
+    {
+      "cx": 94,
+      "cy": 230,
+      "rx": 13.2,
+      "ry": 10.3,
+      "lash_rx": 16.6
+    },
+    {
+      "cx": 142,
+      "cy": 222,
+      "rx": 14.3,
+      "ry": 10.3,
+      "lash_rx": 17.8
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+# DesktopPet 桌面宠物应用依赖包
+
+# GUI框架
+PyQt6==6.6.1
+
+# 图片处理
+Pillow==10.2.0
+numpy>=1.24.0
+opencv-python-headless>=4.8.0
+
+# 国际象棋规则与 AI
+chess>=1.10.0

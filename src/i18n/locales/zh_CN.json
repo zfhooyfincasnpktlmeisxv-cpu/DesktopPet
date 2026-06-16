@@ -1,0 +1,230 @@
+{
+  "app": {
+    "name": "Desktop Pet",
+    "tray_tooltip": "Desktop Pet"
+  },
+  "menu": {
+    "feed": "喂食",
+    "feed_count": "喂食 🍖×{count}",
+    "pet": "抚摸",
+    "wake": "唤醒",
+    "add_pet": "添加新宠物",
+    "switch_skin": "切换皮肤",
+    "show_stat_hud": "显示状态栏",
+    "shop": "小商店",
+    "backpack": "背包",
+    "game_hub": "陪玩打工",
+    "settings": "设置",
+    "hide": "隐藏",
+    "quit": "退出程序",
+    "dev": "Developer",
+    "dev_glide_forward": "Glide forward ▶",
+    "dev_glide_backward": "Moonwalk ◀",
+    "dev_glide_stop": "Stop moving"
+  },
+  "tray": {
+    "toggle_pets": "Show / hide pets",
+    "add_pet": "Add pet",
+    "settings": "Settings",
+    "quit": "Quit",
+    "startup_visible": "Your pet is back on the desktop. Right-click the tray icon to quit, or run stop-desktop-pet.bat.",
+    "startup_hidden": "Your pet is hidden (remembered from last session). Left-click the tray icon or choose Show / hide pets."
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "language_hint": "Applies immediately to menus and dialogs. Some open windows refresh on next open.",
+    "auto_walk": "Auto walk when idle",
+    "show_stat_hud": "Show hunger / mood bar",
+    "opacity": "Window opacity",
+    "save": "Save",
+    "cancel": "Cancel"
+  },
+  "messages": {
+    "missing_skin_title": "Desktop Pet — missing skin assets",
+    "missing_skin_body": "skins/default/idle frames were not found. The pet cannot be drawn.\n\nIf you have source sprites under 人物序列图/, run rebuild-skins.bat and restart.\n\nTo stop the app: use the tray menu Quit or stop-desktop-pet.bat."
+  },
+  "game_hub": {
+    "title": "Mini-games",
+    "subtitle": "Play mini-games with your pet and earn gold for the shop",
+    "gold_today": "Gold left today: {left} / {cap}",
+    "pet_live": "💬 Pet commentary",
+    "waiting": "Waiting to start…",
+    "fps": "Frame rate",
+    "vsync": "VSync",
+    "play": "Play",
+    "close": "Close",
+    "session_title": "Mini-games · {name}",
+    "richman": "Monopoly",
+    "chess": "Chess",
+    "featured": "Featured",
+    "mini_games": "Arcade games",
+    "enter_3d_board": "Enter 3D board",
+    "start_match": "Start match",
+    "start": "Start",
+    "wins_badge": "{count} wins",
+    "best_score": "Best {score}"
+  },
+  "store": {
+    "title": "Shop & backpack",
+    "header_title": "小商店",
+    "shop_tab": "Shop",
+    "bag_tab": "Backpack",
+    "gold": "Gold: {amount}",
+    "buy": "购买",
+    "use": "Use",
+    "shop_hint": "购买食物后，在右键菜单选择「喂食」即可使用。",
+    "price_each": "💰 {price} 金币 / 个",
+    "quantity": "数量",
+    "bag_item_kinds": "物品种类 {count}",
+    "bag_feedable": "可喂食 {count}",
+    "empty_bag": "Backpack is empty",
+    "empty_bag_hint": "背包是空的\n去「商店」买点食物吧～",
+    "tag_food": "可喂食",
+    "tag_item": "道具",
+    "buy_success": "购买成功！{emoji} {name} ×{qty}",
+    "buy_fail": "购买失败，请稍后再试",
+    "not_enough_gold": "金币不足，还差 {need} 金币",
+    "close": "关闭"
+  },
+  "shop_items": {
+    "burger": {
+      "name": "汉堡",
+      "description": "喂食时消耗，恢复饱食与少量心情"
+    }
+  },
+  "games": {
+    "snake": {
+      "name": "贪吃蛇",
+      "description": "方向键或 WASD 控制"
+    },
+    "catch": {
+      "name": "接汉堡",
+      "description": "← → 接盘 60 秒"
+    },
+    "dodge": {
+      "name": "流星躲避",
+      "description": "躲避流星"
+    },
+    "memory": {
+      "name": "美食记忆",
+      "description": "90 秒内翻牌配对"
+    },
+    "richman": {
+      "name": "大富翁",
+      "description": "24 格城市棋盘"
+    },
+    "chess": {
+      "name": "国际象棋",
+      "description": "人机或双人"
+    }
+  },
+  "text_pools": {
+    "fallback": "喵～",
+    "happy": [
+      "你好呀！",
+      "今天真开心~",
+      "主人来陪我玩吧！"
+    ],
+    "hungry": [
+      "我饿了...",
+      "想吃好吃的！",
+      "🍖"
+    ],
+    "sad": [
+      "心情不好...",
+      "摸摸我好不好？",
+      "😢"
+    ],
+    "normal": [
+      "喵～",
+      "我在哦～",
+      "有什么事吗？"
+    ],
+    "feed": [
+      "好吃！",
+      "谢谢主人！",
+      "饱饱的～"
+    ],
+    "pet": [
+      "舒服～",
+      "再摸摸～",
+      "❤️"
+    ],
+    "no_food": [
+      "没有食物了…去商店买点吧！",
+      "背包里没有吃的～"
+    ],
+    "game_win": [
+      "打工辛苦啦！赚了不少金币～",
+      "一起玩真开心！💰"
+    ],
+    "game_daily_cap": [
+      "今天打工够啦～",
+      "明日再来陪我玩！"
+    ]
+  },
+  "stat_hud": {
+    "hunger": "Hunger",
+    "mood": "Mood",
+    "intimacy": "Lv.{level}"
+  },
+  "game_feedback": {
+    "snake": {
+      "start": [
+        "Let's go!"
+      ],
+      "food": [
+        "Nice!"
+      ],
+      "milestone_3": [
+        "Great!"
+      ],
+      "death": [
+        "Try again!"
+      ]
+    },
+    "catch": {
+      "start": [
+        "Let's go!"
+      ],
+      "catch": [
+        "Nice!"
+      ],
+      "complete": [
+        "Great!"
+      ],
+      "death": [
+        "Try again!"
+      ]
+    },
+    "dodge": {
+      "start": [
+        "Let's go!"
+      ],
+      "near_miss": [
+        "Nice!"
+      ],
+      "milestone_30": [
+        "Great!"
+      ],
+      "death": [
+        "Try again!"
+      ]
+    },
+    "memory": {
+      "start": [
+        "Let's go!"
+      ],
+      "match": [
+        "Nice!"
+      ],
+      "complete": [
+        "Great!"
+      ],
+      "death": [
+        "Try again!"
+      ]
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_comment": "待机=人物立绘静态 | walk=行走.jpg 4x5共20帧(1280整除) | 喂食=统一缩放",
+  "target_size": [256, 426],
+  "portrait_source": "人物本体（并非序列图，为本体）.jpg",
+  "build_policy": {
+    "global_height": true,
+    "foot_anchor": true
+  },
+  "animations": [
+    {
+      "name": "idle",
+      "type": "portrait"
+    },
+    {
+      "name": "walk",
+      "source": "行走.jpg",
+      "force_legacy": true,
+      "legacy": {
+        "rows": 4,
+        "cols": 5,
+        "max_frames": 20
+      },
+      "anchor_feet": true
+    },
+    {
+      "name": "eat",
+      "source": "吃汉堡.jpg",
+      "force_legacy": true,
+      "legacy": {
+        "rows": 3,
+        "cols": 5,
+        "max_frames": 5,
+        "row_offset": 0,
+        "row_count": 1
+      },
+      "uniform_scale": true,
+      "anchor_feet": false
+    },
+    {
+      "name": "sleep",
+      "source": "睡觉.jpg",
+      "force_legacy": true,
+      "legacy": { "rows": 5, "cols": 3, "max_frames": 15 },
+      "uniform_scale": true,
+      "anchor_feet": false
+    },
+    {
+      "name": "hover",
+      "source": "悬停或者点击反应.jpg",
+      "force_legacy": true,
+      "legacy": { "rows": 3, "cols": 5, "max_frames": 5, "row_offset": 0, "row_count": 1 }
+    },
+    {
+      "name": "click",
+      "from": "hover"
+    }
+  ],
+  "derived": {
+    "grabbed": { "from": "idle", "dup_to": 3 },
+    "fall": { "from": "idle", "hold_first": 3 }
+  },
+  "playback_fps": {
+    "idle": 1,
+    "walk": 8,
+    "eat": 8,
+    "sleep": 8
+  }
+}

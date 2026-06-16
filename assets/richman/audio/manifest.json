@@ -1,0 +1,18 @@
+{
+  "license": "CC0 — Kenney.nl casino/jingles; BGM from OpenGameArt music-loops",
+  "sfx": [
+    "build.ogg",
+    "buy.ogg",
+    "card.ogg",
+    "click.ogg",
+    "dice_land.ogg",
+    "dice_roll.ogg",
+    "jail.ogg",
+    "money_in.ogg",
+    "money_out.ogg",
+    "win.ogg"
+  ],
+  "bgm": [
+    "game.mp3"
+  ]
+}

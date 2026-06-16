@@ -1,0 +1,185 @@
+{
+  "sources": {
+    "天津": {
+      "file": "tianjin.jpg",
+      "license": "Pexels License",
+      "credit": "Pexels",
+      "urls": [
+        "https://images.pexels.com/photos/2570161/pexels-photo-2570161.jpeg?auto=compress&cs=tinysrgb&w=640"
+      ]
+    },
+    "重庆": {
+      "file": "chongqing.jpg",
+      "license": "Pexels License",
+      "credit": "Pexels",
+      "urls": [
+        "https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=640",
+        "https://images.pexels.com/photos/2867275/pexels-photo-2867275.jpeg?auto=compress&cs=tinysrgb&w=640"
+      ]
+    },
+    "上海": {
+      "file": "shanghai.jpg",
+      "license": "Pexels License",
+      "credit": "Pexels",
+      "urls": [
+        "https://images.pexels.com/photos/1835718/pexels-photo-1835718.jpeg?auto=compress&cs=tinysrgb&w=640",
+        "https://images.pexels.com/photos/325933/pexels-photo-325933.jpeg?auto=compress&cs=tinysrgb&w=640"
+      ]
+    },
+    "南京": {
+      "file": "nanjing.jpg",
+      "license": "Pexels License",
+      "credit": "Pexels",
+      "urls": [
+        "https://images.pexels.com/photos/2369853/pexels-photo-2369853.jpeg?auto=compress&cs=tinysrgb&w=640",
+        "https://images.pexels.com/photos/3490972/pexels-photo-3490972.jpeg?auto=compress&cs=tinysrgb&w=640"
+      ]
+    },
+    "杭州": {
+      "file": "hangzhou.jpg",
+      "license": "Pexels License",
+      "credit": "Pexels",
+      "urls": [
+        "https://images.pexels.com/photos/2130078/pexels-photo-2130078.jpeg?auto=compress&cs=tinysrgb&w=640"
+      ]
+    },
+    "苏州": {
+      "file": "suzhou.jpg",
+      "license": "Pexels License",
+      "credit": "Pexels",
+      "urls": [
+        "https://images.pexels.com/photos/913215/pexels-photo-913215.jpeg?auto=compress&cs=tinysrgb&w=640"
+      ]
+    },
+    "武汉": {
+      "file": "wuhan.jpg",
+      "license": "Pexels License",
+      "credit": "Pexels",
+      "urls": [
+        "https://images.pexels.com/photos/3408354/pexels-photo-3408354.jpeg?auto=compress&cs=tinysrgb&w=640"
+      ]
+    },
+    "成都": {
+      "file": "chengdu.jpg",
+      "license": "Pexels License",
+      "credit": "Pexels",
+      "urls": [
+        "https://images.pexels.com/photos/145939/pexels-photo-145939.jpeg?auto=compress&cs=tinysrgb&w=640"
+      ]
+    },
+    "西安": {
+      "file": "xian.jpg",
+      "license": "Pexels License",
+      "credit": "Pexels",
+      "urls": [
+        "https://images.pexels.com/photos/1546883/pexels-photo-1546883.jpeg?auto=compress&cs=tinysrgb&w=640"
+      ]
+    },
+    "广州": {
+      "file": "guangzhou.jpg",
+      "license": "Pexels License",
+      "credit": "Pexels",
+      "urls": [
+        "https://images.pexels.com/photos/1366957/pexels-photo-1366957.jpeg?auto=compress&cs=tinysrgb&w=640"
+      ]
+    },
+    "深圳": {
+      "file": "shenzhen.jpg",
+      "license": "Pexels License",
+      "credit": "Pexels",
+      "urls": [
+        "https://images.pexels.com/photos/1188738/pexels-photo-1188738.jpeg?auto=compress&cs=tinysrgb&w=640",
+        "https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=640"
+      ]
+    },
+    "北京": {
+      "file": "beijing.jpg",
+      "license": "Pexels License",
+      "credit": "Pexels",
+      "urls": [
+        "https://images.pexels.com/photos/7692220/pexels-photo-7692220.jpeg?auto=compress&cs=tinysrgb&w=640"
+      ]
+    },
+    "香港": {
+      "file": "hongkong.jpg",
+      "license": "Pexels License",
+      "credit": "Pexels",
+      "urls": [
+        "https://images.pexels.com/photos/2901209/pexels-photo-2901209.jpeg?auto=compress&cs=tinysrgb&w=640"
+      ]
+    },
+    "台北": {
+      "file": "taipei.jpg",
+      "license": "Pexels License",
+      "credit": "Pexels",
+      "urls": [
+        "https://images.pexels.com/photos/2387413/pexels-photo-2387413.jpeg?auto=compress&cs=tinysrgb&w=640"
+      ]
+    },
+    "起点": {
+      "file": "start.jpg",
+      "license": "Pexels License",
+      "credit": "Pexels",
+      "urls": [
+        "https://images.pexels.com/photos/2405844/pexels-photo-2405844.jpeg?auto=compress&cs=tinysrgb&w=640"
+      ]
+    },
+    "机会": {
+      "file": "chance.jpg",
+      "license": "Pexels License",
+      "credit": "Pexels",
+      "urls": [
+        "https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=640"
+      ]
+    },
+    "命运": {
+      "file": "fate.jpg",
+      "license": "Pexels License",
+      "credit": "Pexels",
+      "urls": [
+        "https://images.pexels.com/photos/207731/pexels-photo-207731.jpeg?auto=compress&cs=tinysrgb&w=640"
+      ]
+    },
+    "所得税": {
+      "file": "tax.jpg",
+      "license": "Pexels License",
+      "credit": "Pexels",
+      "urls": [
+        "https://images.pexels.com/photos/259209/pexels-photo-259209.jpeg?auto=compress&cs=tinysrgb&w=640"
+      ]
+    },
+    "奢侈税": {
+      "file": "luxury_tax.jpg",
+      "license": "Pexels License",
+      "credit": "Pexels",
+      "urls": [
+        "https://images.pexels.com/photos/259026/pexels-photo-259026.jpeg?auto=compress&cs=tinysrgb&w=640"
+      ]
+    },
+    "监狱": {
+      "file": "jail.jpg",
+      "license": "Pexels License",
+      "credit": "Pexels",
+      "urls": [
+        "https://images.pexels.com/photos/977796/pexels-photo-977796.jpeg?auto=compress&cs=tinysrgb&w=640"
+      ]
+    },
+    "进监狱": {
+      "file": "go_jail.jpg",
+      "license": "Pexels License",
+      "credit": "Pexels",
+      "urls": [
+        "https://images.pexels.com/photos/977796/pexels-photo-977796.jpeg?auto=compress&cs=tinysrgb&w=640",
+        "https://images.pexels.com/photos/1626703/pexels-photo-1626703.jpeg?auto=compress&cs=tinysrgb&w=640"
+      ]
+    },
+    "免费停车": {
+      "file": "parking.jpg",
+      "license": "Pexels License",
+      "credit": "Pexels",
+      "urls": [
+        "https://images.pexels.com/photos/687757/pexels-photo-687757.jpeg?auto=compress&cs=tinysrgb&w=640"
+      ]
+    }
+  }
+}

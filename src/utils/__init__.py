@@ -1,0 +1,40 @@
+"""
+工具层初始化文件
+导入常用常量和配置加载工具
+"""
+
+from .constants import (
+    ANIMATIONS,
+    DEFAULT_TEXT_POOLS,
+    CONFIG_DIR_NAME,
+    DEFAULT_FPS,
+    DEFAULT_SCALE,
+    DEFAULT_OPACITY,
+    HUNGER_DECAY_RATE,
+    MOOD_DECAY_RATE,
+    INTIMACY_THRESHOLD,
+    MAX_PETS,
+    CLICK_THRESHOLD_MS,
+    CLICK_THRESHOLD_PX,
+    BUBBLE_DURATION_MS,
+    SKINS_DIR,
+)
+from .config_loader import ConfigLoader
+
+__all__ = [
+    'ANIMATIONS',
+    'DEFAULT_TEXT_POOLS',
+    'CONFIG_DIR_NAME',
+    'DEFAULT_FPS',
+    'DEFAULT_SCALE',
+    'DEFAULT_OPACITY',
+    'HUNGER_DECAY_RATE',
+    'MOOD_DECAY_RATE',
+    'INTIMACY_THRESHOLD',
+    'MAX_PETS',
+    'CLICK_THRESHOLD_MS',
+    'CLICK_THRESHOLD_PX',
+    'BUBBLE_DURATION_MS',
+    'SKINS_DIR',
+    'ConfigLoader',
+]

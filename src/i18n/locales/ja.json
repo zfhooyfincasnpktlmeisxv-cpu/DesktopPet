@@ -1,0 +1,225 @@
+{
+  "app": {
+    "name": "Desktop Pet",
+    "tray_tooltip": "Desktop Pet"
+  },
+  "menu": {
+    "feed": "エサ",
+    "feed_count": "エサ 🍖×{count}",
+    "pet": "なでる",
+    "wake": "起こす",
+    "add_pet": "Add pet",
+    "switch_skin": "Switch skin",
+    "show_stat_hud": "Show stat bar",
+    "shop": "ショップ",
+    "backpack": "バッグ",
+    "game_hub": "ミニゲーム",
+    "settings": "設定",
+    "hide": "非表示",
+    "quit": "終了",
+    "dev": "Developer",
+    "dev_glide_forward": "Glide forward ▶",
+    "dev_glide_backward": "Moonwalk ◀",
+    "dev_glide_stop": "Stop moving"
+  },
+  "tray": {
+    "toggle_pets": "Show / hide pets",
+    "add_pet": "Add pet",
+    "settings": "Settings",
+    "quit": "Quit",
+    "startup_visible": "Your pet is back on the desktop. Right-click the tray icon to quit, or run stop-desktop-pet.bat.",
+    "startup_hidden": "Your pet is hidden (remembered from last session). Left-click the tray icon or choose Show / hide pets."
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "language_hint": "Applies immediately to menus and dialogs. Some open windows refresh on next open.",
+    "auto_walk": "Auto walk when idle",
+    "show_stat_hud": "Show hunger / mood bar",
+    "opacity": "Window opacity",
+    "save": "Save",
+    "cancel": "Cancel"
+  },
+  "messages": {
+    "missing_skin_title": "Desktop Pet — missing skin assets",
+    "missing_skin_body": "skins/default/idle frames were not found. The pet cannot be drawn.\n\nIf you have source sprites under 人物序列图/, run rebuild-skins.bat and restart.\n\nTo stop the app: use the tray menu Quit or stop-desktop-pet.bat."
+  },
+  "game_hub": {
+    "title": "Mini-games",
+    "subtitle": "Play mini-games with your pet and earn gold for the shop",
+    "gold_today": "Gold left today: {left} / {cap}",
+    "pet_live": "💬 Pet commentary",
+    "waiting": "Waiting to start…",
+    "fps": "Frame rate",
+    "vsync": "VSync",
+    "play": "Play",
+    "close": "Close",
+    "session_title": "Mini-games · {name}",
+    "richman": "Monopoly",
+    "chess": "Chess",
+    "featured": "Featured",
+    "mini_games": "Arcade games",
+    "enter_3d_board": "Enter 3D board",
+    "start_match": "Start match",
+    "start": "Start",
+    "wins_badge": "{count} wins",
+    "best_score": "Best {score}"
+  },
+  "store": {
+    "title": "Shop & backpack",
+    "header_title": "ショップ",
+    "shop_tab": "Shop",
+    "bag_tab": "Backpack",
+    "gold": "Gold: {amount}",
+    "buy": "購入",
+    "use": "Use",
+    "shop_hint": "購入後、右クリックメニューの「エサ」で使えます。",
+    "price_each": "💰 {price} ゴールド / 個",
+    "quantity": "数量",
+    "bag_item_kinds": "アイテム種類 {count}",
+    "bag_feedable": "エサ可能 {count}",
+    "empty_bag": "Backpack is empty",
+    "empty_bag_hint": "バッグは空です\nショップで買いましょう~",
+    "tag_food": "エサ",
+    "tag_item": "Item",
+    "buy_success": "購入成功！{emoji} {name} ×{qty}",
+    "buy_fail": "Purchase failed. Try again later.",
+    "not_enough_gold": "ゴールド不足 — あと {need}",
+    "close": "閉じる"
+  },
+  "shop_items": {
+    "burger": {
+      "name": "バーガー",
+      "description": "エサやりで消費。満腹度と気分を回復"
+    }
+  },
+  "games": {
+    "snake": {
+      "name": "Snake",
+      "description": "Arrow keys or WASD — eat burgers with your pet to earn gold"
+    },
+    "catch": {
+      "name": "Catch burgers",
+      "description": "Move ← → to catch burgers and dodge bombs for 60 seconds"
+    },
+    "dodge": {
+      "name": "Meteor dodge",
+      "description": "Dodge falling meteors — survive longer for more gold"
+    },
+    "memory": {
+      "name": "Food memory",
+      "description": "Flip cards and match food pairs within 90 seconds"
+    },
+    "richman": {
+      "name": "Monopoly",
+      "description": "24-tile Chinese city board · buy land and become the tycoon"
+    },
+    "chess": {
+      "name": "Chess",
+      "description": "Classic 8×8 · vs AI or local two-player"
+    }
+  },
+  "text_pools": {
+    "fallback": "ニャ～",
+    "happy": [
+      "こんにちは！",
+      "いい天気~",
+      "遊ぼう！"
+    ],
+    "hungry": [
+      "お腹すいた…",
+      "おいしいものちょうだい！"
+    ],
+    "sad": [
+      "元気ない…",
+      "なでて？"
+    ],
+    "normal": [
+      "ニャ～",
+      "ここにいるよ~"
+    ],
+    "feed": [
+      "おいしい！",
+      "ありがとう！"
+    ],
+    "pet": [
+      "気持ちいい~",
+      "もっと~"
+    ],
+    "no_food": [
+      "エサがない…",
+      "バッグ空っぽ~"
+    ],
+    "game_win": [
+      "お疲れ様！ゴールドGET~",
+      "楽しかった！💰"
+    ],
+    "game_daily_cap": [
+      "今日はここまで~",
+      "また明日！"
+    ]
+  },
+  "stat_hud": {
+    "hunger": "Hunger",
+    "mood": "Mood",
+    "intimacy": "Lv.{level}"
+  },
+  "game_feedback": {
+    "snake": {
+      "start": [
+        "行こう！"
+      ],
+      "food": [
+        "おいしい！"
+      ],
+      "milestone_3": [
+        "すごい！"
+      ],
+      "death": [
+        "もう一回！"
+      ]
+    },
+    "catch": {
+      "start": [
+        "行こう！"
+      ],
+      "catch": [
+        "おいしい！"
+      ],
+      "complete": [
+        "すごい！"
+      ],
+      "death": [
+        "もう一回！"
+      ]
+    },
+    "dodge": {
+      "start": [
+        "行こう！"
+      ],
+      "near_miss": [
+        "おいしい！"
+      ],
+      "milestone_30": [
+        "すごい！"
+      ],
+      "death": [
+        "もう一回！"
+      ]
+    },
+    "memory": {
+      "start": [
+        "行こう！"
+      ],
+      "match": [
+        "おいしい！"
+      ],
+      "complete": [
+        "すごい！"
+      ],
+      "death": [
+        "もう一回！"
+      ]
+    }
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "app": {
+    "name": "Desktop Pet",
+    "tray_tooltip": "Desktop Pet"
+  },
+  "menu": {
+    "feed": "Voeren",
+    "feed_count": "Voeren 🍖×{count}",
+    "pet": "Aaien",
+    "wake": "Wekken",
+    "add_pet": "Huisdier toevoegen",
+    "switch_skin": "Skin wisselen",
+    "show_stat_hud": "Statusbalk tonen",
+    "shop": "Winkel",
+    "backpack": "Rugzak",
+    "game_hub": "Minispellen",
+    "settings": "Instellingen",
+    "hide": "Verbergen",
+    "quit": "Afsluiten",
+    "dev": "Developer",
+    "dev_glide_forward": "Glide forward ▶",
+    "dev_glide_backward": "Moonwalk ◀",
+    "dev_glide_stop": "Stop moving"
+  },
+  "tray": {
+    "toggle_pets": "Huisdieren tonen / verbergen",
+    "add_pet": "Huisdier toevoegen",
+    "settings": "Instellingen",
+    "quit": "Afsluiten",
+    "startup_visible": "Je huisdier is terug op het bureaublad. Rechtsklik op het tray-pictogram om te sluiten.",
+    "startup_hidden": "Je huisdier is verborgen. Linksklik op het tray-pictogram om het te tonen."
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "language_hint": "Wordt direct toegepast op menu's en dialogen.",
+    "auto_walk": "Automatisch wandelen",
+    "show_stat_hud": "Honger / humeur tonen",
+    "opacity": "Venstertransparantie",
+    "save": "Save",
+    "cancel": "Cancel"
+  },
+  "messages": {
+    "missing_skin_title": "Desktop Pet — missing skin assets",
+    "missing_skin_body": "skins/default/idle frames were not found. The pet cannot be drawn.\n\nIf you have source sprites under 人物序列图/, run rebuild-skins.bat and restart.\n\nTo stop the app: use the tray menu Quit or stop-desktop-pet.bat."
+  },
+  "game_hub": {
+    "title": "Minispellen",
+    "subtitle": "Speel met je huisdier en verdien goud",
+    "gold_today": "Goud vandaag over: {left} / {cap}",
+    "pet_live": "💬 Huisdier live",
+    "waiting": "Wachten op start…",
+    "fps": "Framerate",
+    "vsync": "VSync",
+    "play": "Play",
+    "close": "Sluiten",
+    "session_title": "Minispellen · {name}",
+    "richman": "Monopoly",
+    "chess": "Chess",
+    "featured": "Uitgelicht",
+    "mini_games": "Arcade",
+    "enter_3d_board": "3D-bord openen",
+    "start_match": "Wedstrijd starten",
+    "start": "Spelen",
+    "wins_badge": "{count} overwinningen",
+    "best_score": "Beste {score}"
+  },
+  "store": {
+    "title": "Winkel & rugzak",
+    "header_title": "Winkel",
+    "shop_tab": "Winkel",
+    "bag_tab": "Rugzak",
+    "gold": "Goud: {amount}",
+    "buy": "Kopen",
+    "use": "Use",
+    "shop_hint": "Koop eten en gebruik Voeren via het rechtsklikmenu.",
+    "price_each": "💰 {price} goud per stuk",
+    "quantity": "Aantal",
+    "bag_item_kinds": "Soorten items: {count}",
+    "bag_feedable": "Te voeren: {count}",
+    "empty_bag": "Backpack is empty",
+    "empty_bag_hint": "Rugzak is leeg.\nKoop eten in de winkel~",
+    "tag_food": "Voedsel",
+    "tag_item": "Voorwerp",
+    "buy_success": "Gekocht! {emoji} {name} ×{qty}",
+    "buy_fail": "Aankoop mislukt. Probeer later opnieuw.",
+    "not_enough_gold": "Niet genoeg goud — nog {need} nodig",
+    "close": "Sluiten"
+  },
+  "shop_items": {
+    "burger": {
+      "name": "Hamburger",
+      "description": "Wordt gebruikt bij voeren; herstelt honger en een beetje humeur"
+    }
+  },
+  "games": {
+    "snake": {
+      "name": "Slang",
+      "description": "Pijltjes of WASD"
+    },
+    "catch": {
+      "name": "Burgers vangen",
+      "description": "← → 60 seconden"
+    },
+    "dodge": {
+      "name": "Meteor ontwijken",
+      "description": "Overleef langer"
+    },
+    "memory": {
+      "name": "Geheugenspel",
+      "description": "90 sec paren"
+    },
+    "richman": {
+      "name": "Monopoly",
+      "description": "24-tegel bord"
+    },
+    "chess": {
+      "name": "Schaken",
+      "description": "AI of lokaal 2 spelers"
+    }
+  },
+  "text_pools": {
+    "fallback": "Miauw~",
+    "happy": [
+      "Hoi!",
+      "Wat een fijne dag~",
+      "Kom met me spelen!"
+    ],
+    "hungry": [
+      "Ik heb honger...",
+      "Iets lekkers alsjeblieft!",
+      "🍖"
+    ],
+    "sad": [
+      "Ik voel me down...",
+      "Aai me even?",
+      "😢"
+    ],
+    "normal": [
+      "Miauw~",
+      "Ik ben er~",
+      "Iets nodig?"
+    ],
+    "feed": [
+      "Lekker!",
+      "Bedankt!",
+      "Ik zit vol~"
+    ],
+    "pet": [
+      "Heerlijk~",
+      "Nog meer~",
+      "❤️"
+    ],
+    "no_food": [
+      "Geen eten meer… naar de winkel!",
+      "Rugzak leeg~"
+    ],
+    "game_win": [
+      "Goed gedaan! Goud verdiend~",
+      "Dat was leuk! 💰"
+    ],
+    "game_daily_cap": [
+      "Genoeg gewerkt vandaag~",
+      "Tot morgen!"
+    ]
+  },
+  "stat_hud": {
+    "hunger": "Honger",
+    "mood": "Humeur",
+    "intimacy": "Lv.{level}"
+  },
+  "game_feedback": {
+    "snake": {
+      "start": [
+        "Laten we gaan!"
+      ],
+      "food": [
+        "Lekker!"
+      ],
+      "milestone_3": [
+        "Geweldig!"
+      ],
+      "death": [
+        "Opnieuw proberen!"
+      ]
+    },
+    "catch": {
+      "start": [
+        "Laten we gaan!"
+      ],
+      "catch": [
+        "Lekker!"
+      ],
+      "complete": [
+        "Geweldig!"
+      ],
+      "death": [
+        "Opnieuw proberen!"
+      ]
+    },
+    "dodge": {
+      "start": [
+        "Laten we gaan!"
+      ],
+      "near_miss": [
+        "Lekker!"
+      ],
+      "milestone_30": [
+        "Geweldig!"
+      ],
+      "death": [
+        "Opnieuw proberen!"
+      ]
+    },
+    "memory": {
+      "start": [
+        "Laten we gaan!"
+      ],
+      "match": [
+        "Lekker!"
+      ],
+      "complete": [
+        "Geweldig!"
+      ],
+      "death": [
+        "Opnieuw proberen!"
+      ]
+    }
+  }
+}

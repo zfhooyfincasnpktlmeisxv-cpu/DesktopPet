@@ -1,0 +1,217 @@
+{
+  "app": {
+    "name": "Desktop Pet",
+    "tray_tooltip": "Desktop Pet"
+  },
+  "menu": {
+    "feed": "ให้อาหาร",
+    "feed_count": "Feed 🍖×{count}",
+    "pet": "ลูบ",
+    "wake": "Wake up",
+    "add_pet": "Add pet",
+    "switch_skin": "Switch skin",
+    "show_stat_hud": "Show stat bar",
+    "shop": "ร้านค้า",
+    "backpack": "Backpack",
+    "game_hub": "Mini-games",
+    "settings": "ตั้งค่า",
+    "hide": "Hide",
+    "quit": "ออก",
+    "dev": "Developer",
+    "dev_glide_forward": "Glide forward ▶",
+    "dev_glide_backward": "Moonwalk ◀",
+    "dev_glide_stop": "Stop moving"
+  },
+  "tray": {
+    "toggle_pets": "Show / hide pets",
+    "add_pet": "Add pet",
+    "settings": "Settings",
+    "quit": "Quit",
+    "startup_visible": "Your pet is back on the desktop. Right-click the tray icon to quit, or run stop-desktop-pet.bat.",
+    "startup_hidden": "Your pet is hidden (remembered from last session). Left-click the tray icon or choose Show / hide pets."
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "language_hint": "Applies immediately to menus and dialogs. Some open windows refresh on next open.",
+    "auto_walk": "Auto walk when idle",
+    "show_stat_hud": "Show hunger / mood bar",
+    "opacity": "Window opacity",
+    "save": "Save",
+    "cancel": "Cancel"
+  },
+  "messages": {
+    "missing_skin_title": "Desktop Pet — missing skin assets",
+    "missing_skin_body": "skins/default/idle frames were not found. The pet cannot be drawn.\n\nIf you have source sprites under 人物序列图/, run rebuild-skins.bat and restart.\n\nTo stop the app: use the tray menu Quit or stop-desktop-pet.bat."
+  },
+  "game_hub": {
+    "title": "Mini-games",
+    "subtitle": "Play mini-games with your pet and earn gold for the shop",
+    "gold_today": "Gold left today: {left} / {cap}",
+    "pet_live": "💬 Pet commentary",
+    "waiting": "Waiting to start…",
+    "fps": "Frame rate",
+    "vsync": "VSync",
+    "play": "Play",
+    "close": "Close",
+    "session_title": "Mini-games · {name}",
+    "richman": "Monopoly",
+    "chess": "Chess",
+    "featured": "Featured",
+    "mini_games": "Arcade games",
+    "enter_3d_board": "Enter 3D board",
+    "start_match": "Start match",
+    "start": "Start",
+    "wins_badge": "{count} wins",
+    "best_score": "Best {score}"
+  },
+  "store": {
+    "title": "Shop & backpack",
+    "header_title": "ร้านค้า",
+    "shop_tab": "Shop",
+    "bag_tab": "Backpack",
+    "gold": "Gold: {amount}",
+    "buy": "ซื้อ",
+    "use": "Use",
+    "shop_hint": "After buying food, choose Feed from the pet's right-click menu.",
+    "price_each": "💰 {price} ทอง",
+    "quantity": "Qty",
+    "bag_item_kinds": "Item types: {count}",
+    "bag_feedable": "Feedable: {count}",
+    "empty_bag": "Backpack is empty",
+    "empty_bag_hint": "Backpack is empty.\nBuy food in the Shop tab~",
+    "tag_food": "Feed item",
+    "tag_item": "Item",
+    "buy_success": "Purchased! {emoji} {name} ×{qty}",
+    "buy_fail": "Purchase failed. Try again later.",
+    "not_enough_gold": "Not enough gold — need {need} more",
+    "close": "ปิด"
+  },
+  "shop_items": {
+    "burger": {
+      "name": "เบอร์เกอร์",
+      "description": "ใช้เมื่อให้อาหาร ฟื้นความหิวและอารมณ์"
+    }
+  },
+  "games": {
+    "snake": {
+      "name": "Snake",
+      "description": "Arrow keys or WASD — eat burgers with your pet to earn gold"
+    },
+    "catch": {
+      "name": "Catch burgers",
+      "description": "Move ← → to catch burgers and dodge bombs for 60 seconds"
+    },
+    "dodge": {
+      "name": "Meteor dodge",
+      "description": "Dodge falling meteors — survive longer for more gold"
+    },
+    "memory": {
+      "name": "Food memory",
+      "description": "Flip cards and match food pairs within 90 seconds"
+    },
+    "richman": {
+      "name": "Monopoly",
+      "description": "24-tile Chinese city board · buy land and become the tycoon"
+    },
+    "chess": {
+      "name": "Chess",
+      "description": "Classic 8×8 · vs AI or local two-player"
+    }
+  },
+  "text_pools": {
+    "fallback": "เหมียว~",
+    "happy": [
+      "สวัสดี!",
+      "วันดี~"
+    ],
+    "hungry": [
+      "หิว..."
+    ],
+    "sad": [
+      "เศร้า..."
+    ],
+    "normal": [
+      "เหมียว~"
+    ],
+    "feed": [
+      "อร่อย!",
+      "ขอบคุณ!"
+    ],
+    "pet": [
+      "ดี~"
+    ],
+    "no_food": [
+      "ไม่มีอาหาร…"
+    ],
+    "game_win": [
+      "เก่ง! ได้ทอง~"
+    ],
+    "game_daily_cap": [
+      "พอแล้ววันนี้~"
+    ]
+  },
+  "stat_hud": {
+    "hunger": "Hunger",
+    "mood": "Mood",
+    "intimacy": "Lv.{level}"
+  },
+  "game_feedback": {
+    "snake": {
+      "start": [
+        "Let's go!"
+      ],
+      "food": [
+        "Nice!"
+      ],
+      "milestone_3": [
+        "Great!"
+      ],
+      "death": [
+        "Try again!"
+      ]
+    },
+    "catch": {
+      "start": [
+        "Let's go!"
+      ],
+      "catch": [
+        "Nice!"
+      ],
+      "complete": [
+        "Great!"
+      ],
+      "death": [
+        "Try again!"
+      ]
+    },
+    "dodge": {
+      "start": [
+        "Let's go!"
+      ],
+      "near_miss": [
+        "Nice!"
+      ],
+      "milestone_30": [
+        "Great!"
+      ],
+      "death": [
+        "Try again!"
+      ]
+    },
+    "memory": {
+      "start": [
+        "Let's go!"
+      ],
+      "match": [
+        "Nice!"
+      ],
+      "complete": [
+        "Great!"
+      ],
+      "death": [
+        "Try again!"
+      ]
+    }
+  }
+}

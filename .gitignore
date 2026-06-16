@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+*.manifest
+*.spec.bak
+
+# Virtual environments
+.venv/
+.venv-matte/
+venv/
+ENV/
+
+# Test & tooling cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+*.swo
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Local logs & scratch
+run_log.txt
+*.log
+
+# Root debug / analysis images (dev only)
+/_*.png
+/_debug_*.png
+/_verify_*.png
+/_dbg_*.png
+/_mask_*.png
+/test_*.png
+/test_thresh_*.png
+
+# Local-only: raw sprite sheets & optional GPU matte toolchain
+人物序列图/
+tools/dev/
+
+# Internal dev notes (PRD drafts, phase reports, TODOs) — keep locally
+docs/dev/
+
+# Tooling scratch & debug output
+tools/*.png
+tools/*.jpg
+tools/_compare/
+assets/richman/audio/_src/
+
+# User save data: %APPDATA%/DesktopPet/ (Windows) — never commit
