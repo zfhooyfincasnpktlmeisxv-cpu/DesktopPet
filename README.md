@@ -1,17 +1,40 @@
-# Desktop Pet
+# Desktop Pet — transparent animated desktop companion for Windows
 
 [![tests](https://github.com/zfhooyfincasnpktlmeisxv-cpu/DesktopPet/actions/workflows/tests.yml/badge.svg)](https://github.com/zfhooyfincasnpktlmeisxv-cpu/DesktopPet/actions/workflows/tests.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Release](https://img.shields.io/github/v/release/zfhooyfincasnpktlmeisxv-cpu/DesktopPet?label=release)](https://github.com/zfhooyfincasnpktlmeisxv-cpu/DesktopPet/releases)
+[![Release](https://github.com/zfhooyfincasnpktlmeisxv-cpu/DesktopPet/releases/latest)](https://github.com/zfhooyfincasnpktlmeisxv-cpu/DesktopPet/releases/latest)
+[![Windows](https://img.shields.io/badge/platform-Windows_10%2F11-0078D4?logo=windows&logoColor=white)](https://github.com/zfhooyfincasnpktlmeisxv-cpu/DesktopPet/releases/latest)
+[![Languages](https://img.shields.io/badge/i18n-18_languages-5c6bc0)](docs/LANGUAGES.md)
 
-A transparent, always-on-top **desktop companion** for Windows — idle animations, speech bubbles, hunger/mood stats, a small shop economy, and a bundle of mini-games including **Monopoly** and **Chess**.
+**DesktopPet** is a transparent, always-on-top desktop companion with idle animations, a shop economy, and minigames (**Monopoly**, **chess**, arcade).
 
-> Fan-made desktop pet project. **Not** affiliated with DeepSeek or any official brand.  
-> Source code is MIT-licensed; verify you have rights to redistribute character art before publishing builds.
+> **End users:** download the [Release installer or portable exe](https://github.com/zfhooyfincasnpktlmeisxv-cpu/DesktopPet/releases/latest) — **Python is not required**.  
+> **Developers:** see [Quick start (from source)](#quick-start-from-source) — requires Python 3.10+.
+
+Fan-made project · **Not** affiliated with DeepSeek or any official brand · [MIT](LICENSE) source
+
+**[Download for Windows](https://github.com/zfhooyfincasnpktlmeisxv-cpu/DesktopPet/releases/latest)** · [中文说明](README.zh-CN.md) · [Release notes & SHA-256](docs/RELEASE_NOTES.md)
 
 ---
 
-## Screenshots
+## Why Desktop Pet?
+
+| | |
+|---|---|
+| **Lives on your desktop** | Transparent window — drag, click, speech bubbles, sleep & walk |
+| **More than a mascot** | Shop, hunger/mood stats, intimacy — progress auto-saves |
+| **Real games inside** | **Monopoly** (24 Chinese cities) + **chess** vs AI + 4 arcade games |
+| **18 UI languages** | English default — full list in [docs/LANGUAGES.md](docs/LANGUAGES.md) |
+| **Ready to use** | Installer + portable exe on [Releases](https://github.com/zfhooyfincasnpktlmeisxv-cpu/DesktopPet/releases/latest) |
+
+---
+
+## Demo
+
+<!-- Replace with docs/demo.gif when you record a 10–20s screen capture -->
+<!-- ![Desktop Pet demo](docs/demo.gif) -->
+
+Static previews below. A short demo GIF can be added at `docs/demo.gif` (recommended: pet idle + game hub + Monopoly).
 
 | Desktop pet | Mini-game hub | Monopoly board |
 |:---:|:---:|:---:|
@@ -23,98 +46,74 @@ A transparent, always-on-top **desktop companion** for Windows — idle animatio
 
 ---
 
+## Download (Windows) — no Python required
+
+Release builds are **self-contained** Windows executables. You do **not** need Python installed.
+
+| File | Best for |
+|------|----------|
+| **`DesktopPet-Setup-1.0.0.exe`** | Most users — installer, optional desktop shortcut |
+| **`DesktopPet.exe`** | Portable — run without installing |
+
+| | |
+|---|---|
+| **OS** | Windows 10/11 (64-bit) |
+| **Saves** | `%APPDATA%\DesktopPet\` |
+| **SHA-256 & AV notes** | [docs/RELEASE_NOTES.md](docs/RELEASE_NOTES.md) |
+| **Build yourself** | [docs/BUILD.md](docs/BUILD.md) |
+
+Unsigned indie builds may trigger SmartScreen — see Release notes for verification steps.
+
+---
+
 ## Features
 
 | Module | Highlights |
 |--------|------------|
-| **Pet** | Frameless transparent window, drag & click, system tray, multi-pet support |
-| **Stats** | Hunger, mood, intimacy level — auto-saved |
-| **Economy** | Shop, backpack, feed consumables, daily gold cap |
+| **Pet** | Frameless transparent window, tray icon, multi-pet |
+| **Stats** | Hunger, mood, intimacy |
+| **Economy** | Shop, backpack, daily gold cap |
 | **Arcade** | Snake, catch burgers, meteor dodge, memory match |
-| **Monopoly** | 24-tile Chinese city board, property, cards, jail, SFX |
-| **Chess** | vs AI or local two-player, background engine thread |
+| **Monopoly** | 24-tile board, property, cards, jail, SFX |
+| **Chess** | vs AI or local two-player |
 
-**Languages:** English (default), 简体中文, 繁體中文, 日本語, 한국어, Español, Français, Deutsch, Italiano, Português, Русский, العربية, हिन्दी, ไทย, Tiếng Việt, Türkçe, Polski, Nederlands — change in **Settings** (tray menu or right-click the pet).
-
-Chinese feature guide: [docs/zh-CN/FEATURES.md](docs/zh-CN/FEATURES.md) · [README.zh-CN.md](README.zh-CN.md)
-
----
-
-## Download (Windows)
-
-**No Python required** — grab a build from [GitHub Releases](https://github.com/zfhooyfincasnpktlmeisxv-cpu/DesktopPet/releases):
-
-| File | Description |
-|------|-------------|
-| `DesktopPet-Setup-1.0.0.exe` | Installer (recommended) |
-| `DesktopPet.exe` | Portable single-file app |
-
-Requirements: **Windows 10/11** 64-bit. Saves go to `%APPDATA%\DesktopPet\`.
-
-Build from source or create your own installer: [docs/BUILD.md](docs/BUILD.md).
+**Languages (18):** English (default), 简体中文, 繁體中文, 日本語, 한국어, Español, Français, Deutsch, Italiano, Português, Русский, العربية, हिन्दी, ไทย, Tiếng Việt, Türkçe, Polski, Nederlands — [full table](docs/LANGUAGES.md). Switch in **Settings → Language**.
 
 ---
 
 ## Quick start (from source)
 
-### Requirements
-
-- **Python 3.10+** (3.11 recommended)
-- **Windows 10/11**
-
-### Install
+**Requires Python 3.10+** (3.11 recommended) and Windows 10/11. This path is for developers; end users should use [Downloads](#download-windows--no-python-required) instead.
 
 ```powershell
+git clone https://github.com/zfhooyfincasnpktlmeisxv-cpu/DesktopPet.git
 cd DesktopPet
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
-```
-
-### Run
-
-Double-click **`start.bat`** (or `启动宠物.bat`), or:
-
-```powershell
 python src\main.py
 ```
 
-If `skins/default/` is missing, run **`rebuild-skins.bat`** (`重建皮肤.bat`) when you have source sprites under `人物序列图/`.
+### Launcher scripts (repo root)
 
-**Quit completely:** tray icon → Quit, or **`stop-desktop-pet.bat`** (`停止桌宠.bat`).
+| English | Chinese | Action |
+|---------|---------|--------|
+| `start.bat` | `启动宠物.bat` | Start the app |
+| `stop-desktop-pet.bat` | `停止桌宠.bat` | Quit all instances |
+| `rebuild-skins.bat` | `重建皮肤.bat` | Rebuild `skins/default/` from local sprites |
 
-Save data: `%APPDATA%\DesktopPet\` (Windows) or `~/.config/DesktopPet/` (Linux/macOS).
+If `skins/default/` is missing, run `rebuild-skins.bat` when you have source art locally.
 
 ---
 
 ## Controls
 
-- **Left-click** pet — speech bubble  
-- **Drag** — grab / fall animation  
-- **Right-click** — feed, pet, shop, mini-games, **Settings → Language**  
-- **Tray** — left-click show/hide pets  
+- **Left-click** — speech bubble  
+- **Drag** — grab / fall  
+- **Right-click** — feed, pet, shop, mini-games, Settings  
+- **Tray** — left-click show/hide  
 
-Closing the pet window hides it to the tray; it is not the same as quitting.
-
----
-
-## Project layout
-
-```
-DesktopPet/
-├── start.bat / 启动宠物.bat
-├── src/
-│   ├── main.py
-│   ├── i18n/locales/     # 18 languages
-│   ├── ui/               # pet window, shop, game hub, settings
-│   ├── games/            # arcade + richman + chess
-│   └── config/
-├── skins/default/        # baked sprite frames
-├── assets/richman/       # board audio & art
-├── docs/screenshots/
-├── tools/build_skins.py  # rebuild skins (needs local 人物序列图/)
-└── tests/
-```
+Closing the window hides to tray; use tray **Quit** to exit completely.
 
 ---
 
@@ -125,32 +124,18 @@ pip install -r requirements.txt
 python -m unittest discover -s tests -v
 ```
 
-Set `DEV_MODE = False` in `src/utils/constants.py` before release (already off by default).
+[CONTRIBUTING.md](CONTRIBUTING.md) · [docs/QA.md](docs/QA.md) · [SECURITY.md](SECURITY.md)
 
 ---
 
 ## Third-party assets
 
-- Monopoly SFX / UI: [Kenney](https://kenney.nl/) **CC0**
+- Monopoly SFX: [Kenney](https://kenney.nl/) **CC0**
 - City images: [assets/richman/cities/SOURCES.md](assets/richman/cities/SOURCES.md)
-- Chess logic: [python-chess](https://github.com/niklasf/python-chess)
-
-See [assets/richman/README.md](assets/richman/README.md) for details.
-
----
-
-## Community
-
-| Document | Purpose |
-|----------|---------|
-| [CHANGELOG.md](CHANGELOG.md) | Release history |
-| [CONTRIBUTING.md](CONTRIBUTING.md) | Dev setup & PR guidelines |
-| [SECURITY.md](SECURITY.md) | Report vulnerabilities privately |
-| [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | Community standards |
-| [docs/QA.md](docs/QA.md) | Manual test checklist |
+- Chess: [python-chess](https://github.com/niklasf/python-chess)
 
 ---
 
 ## License
 
-[MIT License](LICENSE) for source code. Bundled game assets follow their respective directory licenses. Do not use Hasbro Monopoly trademarks for commercial infringement.
+[MIT License](LICENSE) for source code. Game assets follow their directory licenses. Do not use Hasbro Monopoly trademarks commercially.

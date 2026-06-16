@@ -13,6 +13,8 @@ Default UI language is **English** (18 locales in Settings).
 
 Windows installer / exe: see [docs/BUILD.md](BUILD.md).
 
+GitHub About, Topics, Release copy: [docs/GITHUB_PROMO.md](GITHUB_PROMO.md).
+
 ---
 
 ## GitHub Desktop

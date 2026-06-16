@@ -13,6 +13,10 @@
 | [screenshots/](screenshots/) | README screenshots |
 | [../CHANGELOG.md](../CHANGELOG.md) | Release notes |
 | [../CONTRIBUTING.md](../CONTRIBUTING.md) | Contributor guide |
+| [GITHUB_PROMO.md](GITHUB_PROMO.md) | About / Topics / Release copy |
+| [LANGUAGES.md](LANGUAGES.md) | 18 UI languages (full table) |
+| [RELEASE_NOTES.md](RELEASE_NOTES.md) | v1.0.0 checksums & antivirus notes |
+| [github-social-preview.png](github-social-preview.png) | GitHub 社交预览图 (1280×640) |
 
 ## Assets & licenses
 

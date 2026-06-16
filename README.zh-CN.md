@@ -4,52 +4,69 @@
 
 [![tests](https://github.com/zfhooyfincasnpktlmeisxv-cpu/DesktopPet/actions/workflows/tests.yml/badge.svg)](https://github.com/zfhooyfincasnpktlmeisxv-cpu/DesktopPet/actions/workflows/tests.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Release](https://github.com/zfhooyfincasnpktlmeisxv-cpu/DesktopPet/releases/latest)](https://github.com/zfhooyfincasnpktlmeisxv-cpu/DesktopPet/releases/latest)
 
-一只住在 Windows 桌面上的桌宠：待机、走路、冒气泡；喂食、刷好感，还能陪你玩 **大富翁** 和 **国际象棋**。
+**住在桌面上的可爱桌宠 — 喂食、赚金币，还能一起大富翁、下国际象棋。**
 
-> 同人桌宠项目，与 DeepSeek 或任何官方品牌无关。发布前请确认角色素材的分发权。
+免 Python，一键安装，支持 **18 种语言**。
 
-## 下载（免 Python）
+> 同人桌宠项目 · 与 DeepSeek 或任何官方品牌**无关** · 发布前请确认角色素材分发权
 
-到 [GitHub Releases](https://github.com/zfhooyfincasnpktlmeisxv-cpu/DesktopPet/releases) 下载：
+**[⬇ 下载 Windows 版](https://github.com/zfhooyfincasnpktlmeisxv-cpu/DesktopPet/releases/latest)** · [完整功能说明](docs/zh-CN/FEATURES.md)
 
-- **DesktopPet-Setup-1.0.0.exe** — 安装版（推荐）
-- **DesktopPet.exe** — 绿色单文件版
+---
 
-系统要求：Windows 10/11 64 位。存档在 `%APPDATA%\DesktopPet\`。
+## 为什么值得试试？
 
-自己打包见 [docs/BUILD.md](docs/BUILD.md)。
+| | |
+|---|---|
+| **真·桌宠** | 透明置顶、拖拽互动、冒气泡、睡觉溜达、托盘常驻 |
+| **会成长的伙伴** | 饱食 / 心情 / 好感，自动存档，不是贴图挂件 |
+| **内置完整游戏** | **大富翁**（24 格中国城市棋盘）+ **国际象棋**（人机/双人）+ 4 款街机小游戏 |
+| **对全球用户友好** | 默认英语，Settings 里一键切 18 种语言 |
 
-## 语言
+---
 
-默认 **English**。支持 **18 种语言**（英/简中/繁中/日/韩/西/法/德/意/葡/俄/阿/印/泰/越/土/波/荷）。  
-右键或托盘 → **Settings** → **Language** 切换。
+## 下载
 
-完整自测清单：[docs/QA.md](docs/QA.md)
+| 文件 | 说明 |
+|------|------|
+| **DesktopPet-Setup-1.0.0.exe** | 安装版（推荐） |
+| **DesktopPet.exe** | 绿色单文件 |
+
+系统：Windows 10/11 64 位 · 存档：`%APPDATA%\DesktopPet\`
+
+---
+
+## 截图
+
+见 [README 截图区](README.md#screenshots)
+
+---
 
 ## 从源码运行
 
 ```powershell
+git clone https://github.com/zfhooyfincasnpktlmeisxv-cpu/DesktopPet.git
 cd DesktopPet
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
+python src\main.py
 ```
 
-双击 **`启动宠物.bat`** 或 **`start.bat`** 运行。
+或双击 **`启动宠物.bat`** / `start.bat`。
 
-详细功能见 [docs/zh-CN/FEATURES.md](docs/zh-CN/FEATURES.md)。
+---
 
-## 截图
+## 参与 & 文档
 
-见 [README.md#screenshots](README.md#screenshots) 中的 `docs/screenshots/`。
+[功能详解](docs/zh-CN/FEATURES.md) · [CONTRIBUTING](CONTRIBUTING.md) · [CHANGELOG](CHANGELOG.md) · [打包说明](docs/BUILD.md)
 
-## 参与贡献
+推广文案（About / Topics / Release）：[docs/GITHUB_PROMO.md](docs/GITHUB_PROMO.md)
 
-- [CONTRIBUTING.md](CONTRIBUTING.md) — 开发说明
-- [CHANGELOG.md](CHANGELOG.md) — 更新记录
-- [SECURITY.md](SECURITY.md) — 安全问题反馈
+---
 
 ## 许可
 
-源代码 [MIT](LICENSE)。角色素材请自行确认分发权。
+源代码 [MIT](LICENSE)

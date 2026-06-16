@@ -4,7 +4,7 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFilter
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 ROOT = Path(__file__).resolve().parent.parent
 BRANDING = ROOT / "assets" / "branding"
@@ -108,10 +108,56 @@ def write_installer_art(src: Image.Image) -> None:
     print(f"Wrote {small_path}")
 
 
+def write_social_preview(src: Image.Image) -> None:
+    """GitHub repository social preview — 1280×640 (Settings → Social preview)."""
+    w, h = 1280, 640
+    img = Image.new("RGB", (w, h))
+    draw = ImageDraw.Draw(img)
+    for y in range(h):
+        t = y / max(h - 1, 1)
+        r = int(18 + (42 - 18) * t)
+        g = int(28 + (72 - 28) * t)
+        b = int(58 + (118 - 58) * t)
+        draw.line([(0, y), (w, y)], fill=(r, g, b))
+
+    # Soft glow behind character
+    glow = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    gdraw = ImageDraw.Draw(glow)
+    gdraw.ellipse((720, 80, 1240, 600), fill=(100, 180, 255, 55))
+    img = Image.alpha_composite(img.convert("RGBA"), glow).convert("RGB")
+    draw = ImageDraw.Draw(img)
+
+    try:
+        title_font = ImageFont.truetype("segoeuib.ttf", 72)
+        sub_font = ImageFont.truetype("segoeui.ttf", 34)
+        tag_font = ImageFont.truetype("segoeui.ttf", 26)
+    except OSError:
+        try:
+            title_font = ImageFont.truetype("msyhbd.ttc", 64)
+            sub_font = ImageFont.truetype("msyh.ttc", 32)
+            tag_font = ImageFont.truetype("msyh.ttc", 24)
+        except OSError:
+            title_font = sub_font = tag_font = ImageFont.load_default()
+
+    draw.text((72, 120), "Desktop Pet", fill=(255, 255, 255), font=title_font)
+    draw.text((72, 210), "Your desktop companion", fill=(200, 225, 255), font=sub_font)
+    draw.text((72, 270), "Monopoly · Chess · Mini-games · 18 languages", fill=(160, 195, 240), font=tag_font)
+    draw.text((72, 340), "Windows 10/11  ·  One-click installer  ·  MIT", fill=(130, 170, 220), font=tag_font)
+
+    pet = _fit(src, (480, 520))
+    img_rgba = img.convert("RGBA")
+    img_rgba.paste(pet, (w - pet.width - 80, (h - pet.height) // 2 + 20), pet)
+    out = ROOT / "docs" / "github-social-preview.png"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    img_rgba.convert("RGB").save(out, format="PNG", optimize=True)
+    print(f"Wrote {out}")
+
+
 def main() -> int:
     src = _load_source()
     write_icons(src)
     write_installer_art(src)
+    write_social_preview(src)
     return 0
 
 
