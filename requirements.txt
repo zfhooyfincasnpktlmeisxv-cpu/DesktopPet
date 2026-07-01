@@ -1,7 +1,7 @@
 # DesktopPet 桌面宠物应用依赖包
 
 # GUI框架
-PyQt6==6.6.1
+PyQt6==6.11.0
 
 # 图片处理
 Pillow==10.2.0

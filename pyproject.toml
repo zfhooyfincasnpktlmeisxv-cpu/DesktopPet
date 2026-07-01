@@ -15,7 +15,7 @@ classifiers = [
     "Topic :: Games/Entertainment",
 ]
 dependencies = [
-    "PyQt6==6.6.1",
+    "PyQt6==6.11.0",
     "Pillow==10.2.0",
     "numpy>=1.24.0",
     "opencv-python-headless>=4.8.0",
